@@ -3,22 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="resources/css/style.css">
     <title>My Porfolio</title>
 </head>
 <body>
-    <nav>
-        <div class="nav-links" id="navBar">
-            <a href="index.html" class="active">Home</a>
-            <a href="cv.html">CV</a>
-            <a href="projects.html">Projects</a>
-            <a href="contact.html">Contact</a>
-            <a href="javascript:void(0);" class="icon" onclick="hamburger_menu()">
-                <i class="fa fa-bars"></i>
-            </a>
-        </div>
+    <label class="hamburger-menu">
+        <input type="checkbox" aria-label="nani">
+    </label>
+    <aside class="sidebar">
+        <nav>
+            <a href="#top">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#side-hobbies">Side Hobbies</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </aside>
+
+
+    <nav class="topnav" id="top">
+        <a href="">John Doe</a>
+        <a href="#top">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#side-hobbies">Side Hobbies</a>
+        <a href="#contact">Contact</a>
     </nav>
+
+
+    <div class="section section--home" id="home">
+        <div>
+            <img class="img img--circle" src="resources/images/sample-profile.jpg" alt="profile picture">
+        </div>
+        <div>
+            <p class="text-para">Hello, I'm</p>
+            <h1 class="text-header">John Doe</h1>
+            <p class="text-para">Gamer, Developer</p>
+            <div class="container">
+                <button type="button" onclick="downloadCV()">Download CV</button>
+                <button type="button" class="--button-secondary">Contact Me</button>
+            </div>
+            <div class="section__social-media">
+                <i class="fa-brands fa-linkedin" onclick="window.open('https\://www.linkedin.com/in/phonghan-ng02/', '_blank')"></i>
+                <i class="fa-brands fa-github" onclick="window.open('https\://github.com/mechaman122', '_blank')"></i>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <div class="section section--about" id="about">
+        <div class="section__header">
+            <p class="text-para">Get to know more</p>
+            <h1 class="text-header">About Me</h1>
+        </div>
+        <div class="section__content">
+            <img class="img img--rounded" src="./resources/images/sample-profile-black.jpg" alt="Lorem">
+            <div class="grid grid--about">
+                <div class="grid grid--box">
+                    <div class="box">
+                        <i class="fa-solid fa-award"></i>
+                        <p class="text-header text-header--small">Experience</p>
+                        <p class="text-para text-para--small">6 months+</p>
+                        <p class="text-para text-para--small">Self-taught Developer</p>
+                    </div>
+                    <div class="box">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <p class="text-header text-header--small">Education</p>
+                        <p class="text-para text-para--small">HCMUT</p>
+                        <p class="text-para text-para--small">Bachelor of Computer Science</p>
+                    </div>
+                </div>
+                <p class="text-para text-para--small --left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque sunt libero non dignissimos aut magnam minima, est ipsa autem iure fuga quisquam veniam ducimus nulla voluptatibus ab earum error, quam quo aspernatur odio dolores rerum ad asperiores. Fuga, deserunt adipisci!</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section section--projects" id="projects">
+        <div class="section__header">
+            <p class="text-para">Browse my recent</p>
+            <h1 class="text-header">Projects</h1>
+        </div>
+        <div class="section__content">
+            <div class="project-wrapper">
+                <div class="box box--small">
+                    <img class="img img--boxed" src="./resources/images/sample-profile.jpg" alt="project image">
+                    <p class="title">Project 1</p>
+                    <div class="button-container">
+                        <button type="button">Github</button>
+                        <button type="button">Main Page</button>
+                    </div>   
+                </div>
+                <div class="box box--small">
+                    <img class="img img--boxed" src="./resources/images/sample-profile.jpg" alt="project image">
+                    <p class="title">Project 1</p>
+                    <div class="button-container">
+                        <button type="button">Github</button>
+                        <button type="button">Main Page</button>
+                    </div>   
+                </div>
+                <div class="box box--small">
+                    <img class="img img--boxed" src="./resources/images/sample-profile.jpg" alt="project image">
+                    <p class="title">Project 1</p>
+                    <div class="button-container">
+                        <button type="button">Github</button>
+                        <button type="button">Main Page</button>
+                    </div>   
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <p class="text-para" id="side-hobbies-title">Other</p>
+    <h1 class="text-header">Side Hobbies</h1>
+    <div class="section" id="side-hobbies">
+        
+    </div>
+
+
+    <p class="text-para" id="contact-title">Get In Touch</p>
+    <h1 class="text-header">Contact me</h1>
+    <div class="section section--contact" id="contact">
+        <div id="contact-container">
+            <button type="button"><i class="fa-solid fa-envelope"></i> hanphong.ng02@gmail.com</button>
+            <button type="button" onclick="window.open('https\://www.linkedin.com/in/phonghan-ng02/', '_blank')"><i class="fa-brands fa-linkedin"></i> phonghan-ng02</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer__content">
+            <p class="text-para text-para--small">Made with <i class="fa-solid fa-heart"></i> by John Doe</p>
+            <p class="text-para text-para--small">© 2025</p>
+        </div>
+    </footer>
     <script src="/resources/javascript/my_script.js"></script>
 </body>
 </html>

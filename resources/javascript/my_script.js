@@ -1,8 +1,8 @@
-function hamburger_menu() {
-    var x = document.getElementById("navBar");
-    if (x.className === "nav-links") {
-        x.className += " responsive";
-    } else {
-        x.className = "nav-links";
-    }
+function downloadCV() {
+    window.open('resources/pdf/cv.pdf', '_blank');
+}
+
+// open an url in a new tab
+function viewMainPage() {
+    window.open('https://mechaman122.itch.io/bubble-marine', '_blank');
 }
