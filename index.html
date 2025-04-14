@@ -13,22 +13,18 @@
     </label>
     <aside class="sidebar">
         <nav>
-            <a href="#top">Home</a>
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
             <a href="#side-hobbies">Side Hobbies</a>
-            <a href="#contact">Contact</a>
         </nav>
     </aside>
 
 
     <nav class="topnav" id="top">
         <a href="">John Doe</a>
-        <a href="#top">Home</a>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#side-hobbies">Side Hobbies</a>
-        <a href="#contact">Contact</a>
     </nav>
 
 
@@ -39,7 +35,7 @@
         <div>
             <p class="text-para">Hello, I'm</p>
             <h1 class="text-header">John Doe</h1>
-            <p class="text-para">Gamer, Developer</p>
+            <p class="text-para">Software - Game Developer</p>
             <div class="container">
                 <button type="button" onclick="downloadCV()">Download CV</button>
                 <button type="button" class="--button-secondary">Contact Me</button>
@@ -89,31 +85,103 @@
             <h1 class="text-header">Projects</h1>
         </div>
         <div class="section__content">
-            <div class="project-wrapper">
-                <div class="box box--small">
-                    <img class="img img--boxed" src="./resources/images/sample-profile.jpg" alt="project image">
-                    <p class="title">Project 1</p>
-                    <div class="button-container">
-                        <button type="button">Github</button>
-                        <button type="button">Main Page</button>
-                    </div>   
+            <div class="grid-container">
+                <div class="grid-container__row">
+                    <div class="grid-container__column">
+                        <article class="card">
+                            <h3 class="card__header">
+                                <span>
+                                    <p class="card__header-main">
+                                        Bubble Marine
+                                    </p>
+                                    <p class="card__header-sub">
+                                        A short endless shooting game made for Global Game Jam VN 2025
+                                    </p>
+                                </span>
+                            </h3>
+                            <div class="card__content">
+                                <p class="text-para--small">A short game I made in 36 hours to showcase my skills of game designing and developing. The game has many features, including gun skins, many fish types, highscore and timer with beautiful hand-drawn pixel art.</p>
+                            </div>
+                            <footer>
+                                <div class="section__social-media section__social-media--left">
+                                    <i class="fa-brands fa-github" onclick="window.open('https\://github.com/mechaman122/game_jam2025', '_blank')"></i>
+                                    <i class="fa-solid fa-globe"onclick="window.open('https\://mechaman122.itch.io/bubble-marine', '_blank')"></i>
+                                </div>
+                            </footer>
+                        </article>
+                    </div>
+                    <div class="grid-container__column">
+                        <article class="card">
+                            <h3 class="card__header">
+                                <span>
+                                    <p class="card__header-main">
+                                        Lorem ipsum dolor sit
+                                    </p>
+                                    <p class="card__header-sub">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, beatae?
+                                    </p>
+                                </span>
+                            </h3>
+                            <div class="card__content">
+                                <p class="text-para--small">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati culpa sint libero dignissimos officia hic aliquid maiores corporis debitis eos.</p>
+                            </div>
+                            <footer>
+                                <div class="section__social-media section__social-media--left">
+                                    <i class="fa-brands fa-linkedin" onclick="window.open('https\://www.linkedin.com/in/phonghan-ng02/', '_blank')"></i>
+                                    <i class="fa-brands fa-github" onclick="window.open('https\://github.com/mechaman122', '_blank')"></i>
+                                </div>
+                            </footer>
+                        </article>
+                    </div>
                 </div>
-                <div class="box box--small">
-                    <img class="img img--boxed" src="./resources/images/sample-profile.jpg" alt="project image">
-                    <p class="title">Project 1</p>
-                    <div class="button-container">
-                        <button type="button">Github</button>
-                        <button type="button">Main Page</button>
-                    </div>   
-                </div>
-                <div class="box box--small">
-                    <img class="img img--boxed" src="./resources/images/sample-profile.jpg" alt="project image">
-                    <p class="title">Project 1</p>
-                    <div class="button-container">
-                        <button type="button">Github</button>
-                        <button type="button">Main Page</button>
-                    </div>   
-                </div>
+                <div class="grid-container__row">
+                    <div class="grid-container__column">
+                        <article class="card">
+                            <h3 class="card__header">
+                                <span>
+                                    <p class="card__header-main">
+                                        Lorem ipsum dolor sit
+                                    </p>
+                                    <p class="card__header-sub">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, beatae?
+                                    </p>
+                                </span>
+                            </h3>
+                            <div class="card__content">
+                                <p class="text-para--small">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati culpa sint libero dignissimos officia hic aliquid maiores corporis debitis eos.</p>
+                            </div>
+                            <footer>
+                                <div class="section__social-media section__social-media--left">
+                                    <i class="fa-brands fa-linkedin" onclick="window.open('https\://www.linkedin.com/in/phonghan-ng02/', '_blank')"></i>
+                                    <i class="fa-brands fa-github" onclick="window.open('https\://github.com/mechaman122', '_blank')"></i>
+                                </div>
+                            </footer>
+                        </article>
+                    </div>
+                    <div class="grid-container__column">
+                        <article class="card">
+                            <h3 class="card__header">
+                                <span>
+                                    <p class="card__header-main">
+                                        Lorem ipsum dolor sit
+                                    </p>
+                                    <p class="card__header-sub">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, beatae?
+                                    </p>
+                                </span>
+                            </h3>
+                            <div class="card__content">
+                                <p class="text-para--small">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati culpa sint libero dignissimos officia hic aliquid maiores corporis debitis eos.</p>
+                            </div>
+                            <footer>
+                                <div class="section__social-media section__social-media--left   ">
+                                    <i class="fa-brands fa-linkedin" onclick="window.open('https\://www.linkedin.com/in/phonghan-ng02/', '_blank')"></i>
+                                    <i class="fa-brands fa-github" onclick="window.open('https\://github.com/mechaman122', '_blank')"></i>
+                                </div>
+                            </footer>
+                        </article>
+                    </div>
+                </div>                
             </div>
         </div>
 
@@ -124,16 +192,6 @@
     <h1 class="text-header">Side Hobbies</h1>
     <div class="section" id="side-hobbies">
         
-    </div>
-
-
-    <p class="text-para" id="contact-title">Get In Touch</p>
-    <h1 class="text-header">Contact me</h1>
-    <div class="section section--contact" id="contact">
-        <div id="contact-container">
-            <button type="button"><i class="fa-solid fa-envelope"></i> hanphong.ng02@gmail.com</button>
-            <button type="button" onclick="window.open('https\://www.linkedin.com/in/phonghan-ng02/', '_blank')"><i class="fa-brands fa-linkedin"></i> phonghan-ng02</button>
-        </div>
     </div>
 
     <footer>
